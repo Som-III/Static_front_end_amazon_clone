@@ -1,0 +1,133 @@
+body{
+    height:1200px;
+    padding-top:60px;
+    margin:0;
+
+}
+.nav{
+    position: fixed;
+    top:0;
+    height:60px;
+    width:100%;
+    background-color:lightblue;
+    z-index: 3;
+}
+.nav-2{
+    background-color: aqua;
+    width:100%;
+    height:40px;
+}
+.home{
+    position:absolute;
+    top:200px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height:800px;
+    width:88%;
+    box-sizing: border-box ;
+    padding:20px 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.567);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.553);
+    border-radius: 10px;
+}
+.home>img{
+    width:100%;
+    padding:0;
+    margin-left:0;
+    margin-right:0;
+}
+.text{
+    display:grid;
+    grid-template-columns: 40px 1fr 2fr;
+    width:100%;
+    height:100px;
+    box-sizing: border-box;
+    border: 5px solid rgb(0, 149, 15);
+    border-radius: 10px;
+    
+}
+
+div>img{
+    width:20px;
+    padding-left:10px;
+    padding-top:10px;
+}
+.ele-2>p{
+    text-align: right;
+}
+
+.rate label{
+    display: inline-block;
+    width:50px;
+    content: '\f005';
+    background-color: white;
+}
+.rate{
+    transform: rotateY(180deg);
+    position:absolute;
+    left:0;
+}
+.rate input{
+    display: none;
+}
+.rate label{
+    width:40px;
+
+}
+.rate label::before{
+    content: '\f005';
+    font-family: fontAwesome;
+    transition: 0.3s;
+    font-size: 30px;
+    color:rgb(190, 190, 190);
+}
+.rate input:hover~label:before{
+    color:rgb(255, 255, 0);
+    cursor: pointer;
+}
+.rate input:checked~label:before{
+    color:rgb(255, 255, 0);
+}
+.button{
+    box-sizing: border-box;
+    width:140px;
+    height:58px;
+    padding-top:28px;
+    align-self: center;
+}
+.button>button{
+    width:120px;
+    height:30px;
+    margin-left:20px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.653), 0 6px 20px 0 rgba(0, 0, 0, 0.691);
+    color:rgb(0, 149, 15)
+}
+.comm{
+    border:2px;
+    border-style: groove;
+    border-radius: 5px;
+    height:300px;
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left:10px;
+    padding-right: 10px;
+    flex:1;
+}
+.top{
+    display:flex;
+    flex-basis: 50px;
+}
+
+input[type=textarea]{
+    resize: none;
+}
+input[type=submit]{
+    width:80px;
+    height:40px;
+    border-radius: 5px;
+    background-color: yellow;
+    border:1px groove;
+}
